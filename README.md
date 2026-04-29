@@ -167,7 +167,7 @@ python manage.py runserver
 ![PetTypes](screenshots/image1.png)
 !
 
----
+## ![PetTypes](screenshots/image.png)
 
 ## Ejemplo JSON
 

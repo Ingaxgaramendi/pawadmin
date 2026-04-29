@@ -27,7 +27,6 @@ class PetType(models.Model):
     def __str__(self):
         return self.name
 
-
 class Product(models.Model):
 
     name = models.CharField(
@@ -57,9 +56,12 @@ class Product(models.Model):
         PetType
     )
 
+    # NUEVO
+    image = models.URLField(
+        blank=True,
+        null=True
+    )
+
     created_at = models.DateTimeField(
         auto_now_add=True
     )
-
-    def __str__(self):
-        return self.name

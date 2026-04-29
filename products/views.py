@@ -1,4 +1,5 @@
 from rest_framework import viewsets
+from django.shortcuts import render
 
 from .models import (
     Product,
@@ -41,3 +42,8 @@ class PetTypeViewSet(
 ):
     queryset = PetType.objects.all()
     serializer_class = PetTypeSerializer
+    
+
+def product_list(request):
+    products = Product.objects.all()
+    return render(request, 'products/list.html', {'products': products})
