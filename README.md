@@ -140,7 +140,7 @@ python manage.py runserver
 
 ### Corriendo proyecto
 
-![Admin](screenshots/iniciando.png)
+![iniciando](screenshots/cap1.png)
 
 ---
 
